@@ -7,13 +7,17 @@ bash pre_loso.sh
 
 ### Source code path:
 cd src/baseline_clean: code for baseline-c in the paper
+
 cd src/baseline_noise: code for baseline-n in the paper
+
 cd src/baseline_enhanced: code for baseline-e in the paper
-cd src/baseline_TRNet_wo_high: code for TRNet w/o L_{high} in the paper
-cd src/baseline_TRNet: code for TRNet and TRNet w/o L_{low} in the paper
+
+cd src/baseline_TRNet_wo_high: code for TRNet w/o $L_{high}$ in the paper
+
+cd src/baseline_TRNet: code for TRNet (i.e., alpha=0.5 and beta=0.5) and TRNet w/o $L_{low}$ (i.e., alpha=0.0 and beta=0.5) in the paper
 
 ### Model training:
-bash run.sh $gpu_id $model $hidden $seed $missing_rate $train_dynamic
+bash run.sh
 
 ### Model evaluation:
-bash test.sh $gpu_id $model $hidden $seed $missing_rate $train_dynamic
+bash test.sh
