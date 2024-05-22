@@ -21,3 +21,17 @@ bash run.sh
 
 ### Model evaluation:
 bash test.sh
+
+### Configuration statement:
+
+gpu_id=0 (indicating which gpu to use) 
+
+noise_type=ESC50 (indicating the noise type for speech contamination in training or evaluation)
+
+snr=20 (indicating the signal-to-noise ratio in evaluation)
+
+seed=2021 (indicating the random seed)
+
+alpha=0.5 (indicating the importance of $L_{low}$)
+
+beta=0.5 (indicating the importance of $L_{high}$)
