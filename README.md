@@ -32,6 +32,6 @@ snr=20 (indicating the signal-to-noise ratio in evaluation)
 
 seed=2021 (indicating the random seed)
 
-alpha=0.5 (indicating the importance of $L_{low}$)
+alpha=0.5 (indicating the weight of $L_{low}$)
 
-beta=0.5 (indicating the importance of $L_{high}$)
+beta=0.5 (indicating the weight of $L_{high}$)
